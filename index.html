@@ -428,6 +428,14 @@ footer::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:no
 .signin-line{margin-top:16px;font-size:.9rem;color:var(--fog)}
 .signin-line a{display:inline-block;padding:12px 0;color:var(--gold-hi);text-decoration:underline;text-decoration-color:rgba(222,192,150,.45);text-underline-offset:4px}
 .signin-line a:hover{color:var(--head)}
+
+/* phones: capability photos as a swipeable row, shorter */
+@media(max-width:760px){
+  .plates{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin-inline:-18px;padding:0 18px 4px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .plates::-webkit-scrollbar{display:none}
+  .plates .plate{flex:0 0 80%;aspect-ratio:4/3;scroll-snap-align:center}
+  .final .plate{aspect-ratio:4/3;max-width:none}
+}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
