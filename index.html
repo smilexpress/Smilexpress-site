@@ -444,6 +444,12 @@ footer::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:no
   .speed .meter,.speed .meter-scale{display:none}
   .speed .time{font-size:1.9rem}
 }
+
+/* phones: drop the hero strip that repeats the line above it, and the watermarks behind text */
+@media(max-width:600px){
+  .hero .proof{display:none}
+  .wm{display:none}
+}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
