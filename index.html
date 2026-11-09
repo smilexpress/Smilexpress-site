@@ -436,6 +436,14 @@ footer::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:no
   .plates .plate{flex:0 0 80%;aspect-ratio:4/3;scroll-snap-align:center}
   .final .plate{aspect-ratio:4/3;max-width:none}
 }
+
+/* phones: compact speed cards */
+@media(max-width:600px){
+  .speeds{gap:12px;margin-top:32px}
+  .speed{gap:8px;padding:20px 22px}
+  .speed .meter,.speed .meter-scale{display:none}
+  .speed .time{font-size:1.9rem}
+}
 </style>
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
