@@ -1,0 +1,4 @@
+https://smilexpress.netlify.app/*  https://smilexpress.io/:splat  301!
+/login   https://simplelabos.com/p/smilexpress  302!
+/portal  https://simplelabos.com/p/smilexpress  302!
+/join    https://simplelabos.com/p/smilexpress/join  302!
