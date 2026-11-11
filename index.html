@@ -410,6 +410,7 @@ footer::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:no
 /* hero text link */
 .txt-link{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 6px;font-size:.9rem;color:var(--fog)}
 .txt-link:hover{color:var(--head)}
+@media(min-width:901px){.hero .btns .txt-link{flex-basis:100%}}   /* desktop: keep it on its own line so it does not jump when the web font loads */
 
 /* phones and tablets: keep the desktop composition, bolt on the right behind the copy */
 @media(max-width:900px){
