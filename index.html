@@ -885,6 +885,7 @@ footer::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:no
       <span>&copy; 2026 SmileXpress Dental Studio</span>
       <span>A Sonoran Dental Technologies company</span>
       <span>Prices and turnaround subject to change. Cases are charged when they ship.</span>
+      <a href="/dental-lab-phoenix">Phoenix dental lab</a>
       <a href="/privacy.html">Privacy policy</a>
     </div>
   </div>
@@ -1011,6 +1012,7 @@ var SIGNUP_ENDPOINT = "https://formsubmit.co/ajax/info@smilexpress.io";
   /* Open an account goes straight to the SimpleLabOS self-registration page */
   document.querySelectorAll(".js-signup").forEach(function(a){ a.setAttribute("href", "https://simplelabos.com/p/smilexpress/join"); a.setAttribute("target", "_blank"); a.setAttribute("rel", "noopener"); });
   document.querySelectorAll(".js-fee").forEach(function(a){ a.addEventListener("click", function(e){ open(e, "fee"); }); });
+  if (location.hash === "#fees") open(null, "fee");   /* links from other pages open the fee schedule form */
   dlg.querySelectorAll("[data-close]").forEach(function(b){ b.addEventListener("click", close); });
   dlg.addEventListener("click", function(e){ if (e.target === dlg) close(); });
 
